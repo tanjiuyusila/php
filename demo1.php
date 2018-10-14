@@ -5,6 +5,6 @@
 <?php
 echo "姚之琳的第一段 PHP 脚本！";
 ?>
-<!--http://127.0.0.1/myPhp/demo1.php-->
+<!--http://127.0.0.1/php/demo1.php-->
 </body>
 </html>
