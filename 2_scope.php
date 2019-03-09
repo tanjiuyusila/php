@@ -1,5 +1,5 @@
 <?php
-$x=5; // 全局作用域
+$x=5; // 全局作用域,定义变量
 
 function myTest() {
     $y=10; // 局部作用域
@@ -7,6 +7,7 @@ function myTest() {
     echo "变量 x 是：$x";
     echo "<br>";
     echo "变量 y 是：$y";
+
 }
 
 myTest();
@@ -37,11 +38,16 @@ $n=10;
 
 function aTest() {
     global $m,$n;
+    $m = 2;
+//   加global之后可以修改全局变量的值
     $n=$m+$n;
 }
 
 aTest();
-echo $n; // 输出 15
+echo $n."<br>"; // 输出 15
+echo $m;
 ?>
+
+
 
 
